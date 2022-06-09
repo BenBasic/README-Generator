@@ -42,7 +42,7 @@ function renderLicenseSection(badge, year, username) {
 function renderLicenseTableContent(badge) {
   if (badge === "None") {
     // Do nothing
-  } return `\n- [License](#license)`
+  } return `- [License](#license)`
 }
 
 // TODO: Create a function to generate markdown for README

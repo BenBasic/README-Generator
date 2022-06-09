@@ -31,6 +31,7 @@ const questions = [
         message: "What are the contribution guidelines of your project?"
     },
     {
+        type: "list",
         name: "badge",
         message: "What is the license for your project?",
         choices: ["Creative Commons","MIT","None"]
