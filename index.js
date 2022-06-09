@@ -58,8 +58,16 @@ function writeToFile(fileName, data) {
     });
 }
 
+
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+        .then((data) => {
+            console.log("Writing readme file");
+
+            writeToFile(".README.md", generate({ ...data}))
+        })
+}
 
 // Function call to initialize app
 init();
