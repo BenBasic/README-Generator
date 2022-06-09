@@ -44,6 +44,11 @@ const questions = [
         type: "input",
         name: "email",
         message: "What is your email?"
+    },
+    {
+        type: "input",
+        name: "year",
+        message: "What is the current year?"
     }
 
 ];
