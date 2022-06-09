@@ -3,7 +3,7 @@
 function renderLicenseBadge(badge) {
   if (badge === "None") {
     return ``;
-  } return `https://img.shields.io/badge/License-${data.badge}-darkred.svg`;
+  } return `https://img.shields.io/badge/License-${badge}-darkred.svg`;
 }
 
 // TODO: Create a function that returns the license link
@@ -20,7 +20,7 @@ function renderLicenseLink(badge) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(badge) {
+function renderLicenseSection(badge, year, username) {
   if (badge === "None") {
     return ``;
   } else if (badge === "Creative Commons") {
@@ -28,7 +28,7 @@ function renderLicenseSection(badge) {
     This work is licensed under Creative Commons Attribution 3.0 Unported License.`;
   } else if (badge === "MIT") {
     return `\n## License
-    Copyright ${data.year} ${data.username}
+    Copyright ${year} ${username}
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -59,8 +59,9 @@ function generateMarkdown(data) {
   ## Table Of Contents
 
   - [Installation](#installation)
-  - [Usage](#usage)${renderLicenseTableContent(data.badge)}
-  - [Contribution Guidelines](#Contribution Guidelines)
+  - [Usage](#usage)
+  ${renderLicenseTableContent(data.badge)}
+  - [Guidelines](#guidelines)
   - [Questions](#questions)
 
   ## Installation
@@ -71,7 +72,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
   ${renderLicenseSection(data.badge)}${renderLicenseLink(data.badge)}
-  ## Contribution Guidelines
+  ## Guidelines
 
   ${data.contribution}
 
