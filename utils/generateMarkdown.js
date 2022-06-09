@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   ## Usage
 
   ${data.usage}
-  ${renderLicenseSection(data.badge)}${renderLicenseLink(data.badge)}
+  ${renderLicenseSection(data.badge, data.year, data.username)}${renderLicenseLink(data.badge)}
   ## Guidelines
 
   ${data.contribution}
