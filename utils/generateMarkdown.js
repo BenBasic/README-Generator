@@ -88,7 +88,7 @@ function generateMarkdown(data) {
   To contact me, please send an email to ${data.email}
 
   ## Tests
-  ${data.contribution}
+  ${data.tests}
 `;
 };
 
