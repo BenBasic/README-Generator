@@ -67,6 +67,7 @@ function generateMarkdown(data) {
   ${renderLicenseTableContent(data.badge)}
   - [Guidelines](#guidelines)
   - [Questions](#questions)
+  - [Tests](#tests)
 
   ## Installation
 
@@ -85,6 +86,9 @@ function generateMarkdown(data) {
 
   This repo was created by https://github.com/${data.username}
   To contact me, please send an email to ${data.email}
+
+  ## Tests
+  ${data.contribution}
 `;
 };
 

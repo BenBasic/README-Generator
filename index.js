@@ -50,6 +50,11 @@ const questions = [
         type: "input",
         name: "year",
         message: "What is the current year?"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "What are your test instructions?"
     }
 
 ];
