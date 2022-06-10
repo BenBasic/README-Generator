@@ -1,19 +1,21 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Creates a function that returns a license badge based on which license is selected in the question promps
 function renderLicenseBadge(badge) {
   if (badge === "None") {
+    // If there is no license selected, return an empty string
     return ``;
   } else if (badge === "CC") {
+    // If CC is selected, it will link the badge image as well as a website URL
     return `[![license](https://img.shields.io/badge/License-${badge}-darkred.svg)](https://creativecommons.org/about/program-areas/software/)`;
   } else if (badge === "MIT") {
+    // If MIT is selected, it will link the badge image as well as a website URL
     return `[![license](https://img.shields.io/badge/License-${badge}-darkred.svg)](https://opensource.org/licenses/MIT)`;
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the link related to the selected license
 function renderLicenseLink(badge) {
   if (badge === "None") {
+    // If there is no license, return an empty string
     return ``;
   } else if (badge === "CC") {
     return `\nhttps://creativecommons.org/terms#8`;
@@ -22,10 +24,10 @@ function renderLicenseLink(badge) {
   } 
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README, it will display different legal content based on what license is selected
 function renderLicenseSection(badge, year, username) {
   if (badge === "None") {
+    // If there is no license, return an empty string
     return ``;
   } else if (badge === "CC") {
     return `\n## License
@@ -46,10 +48,10 @@ function renderLicenseSection(badge, year, username) {
 function renderLicenseTableContent(badge) {
   if (badge === "None") {
     // Do nothing
-  } return `- [License](#license)`
+  } return `- [License](#license)` // Creates a license category if a license is selected
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README, grabbing data from the questions answered and inserting them into the content of the readme with template literals
 function generateMarkdown(data) {
   return `
   
@@ -92,4 +94,5 @@ function generateMarkdown(data) {
 `;
 };
 
+// Exports the markdown
 module.exports = generateMarkdown;
