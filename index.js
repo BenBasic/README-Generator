@@ -34,7 +34,7 @@ const questions = [
         type: "list",
         name: "badge",
         message: "What is the license for your project?",
-        choices: ["Creative Commons","MIT","None"]
+        choices: ["CC","MIT","None"]
     },
     {
         type: "input",

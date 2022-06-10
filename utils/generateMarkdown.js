@@ -3,15 +3,19 @@
 function renderLicenseBadge(badge) {
   if (badge === "None") {
     return ``;
-  } return `[![license]https://img.shields.io/badge/License-${badge}-darkred.svg]`;
-}
+  } else if (badge === "CC") {
+    return `[![license](https://img.shields.io/badge/License-${badge}-darkred.svg)](https://creativecommons.org/about/program-areas/software/)`;
+  } else if (badge === "MIT") {
+    return `[![license](https://img.shields.io/badge/License-${badge}-darkred.svg)](https://opensource.org/licenses/MIT)`;
+  }
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(badge) {
   if (badge === "None") {
     return ``;
-  } else if (badge === "Creative Commons") {
+  } else if (badge === "CC") {
     return `\nhttps://creativecommons.org/terms#8`;
   } else if (badge === "MIT") {
     return `\nhttps://opensource.org/licenses/MIT`;
@@ -23,7 +27,7 @@ function renderLicenseLink(badge) {
 function renderLicenseSection(badge, year, username) {
   if (badge === "None") {
     return ``;
-  } else if (badge === "Creative Commons") {
+  } else if (badge === "CC") {
     return `\n## License
     This work is licensed under Creative Commons Attribution 3.0 Unported License.`;
   } else if (badge === "MIT") {
@@ -72,6 +76,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
   ${renderLicenseSection(data.badge, data.year, data.username)}${renderLicenseLink(data.badge)}
+
   ## Guidelines
 
   ${data.contribution}

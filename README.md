@@ -1,11 +1,11 @@
 
   
-  # 5
-  [![license]https://img.shields.io/badge/License-MIT-darkred.svg]
+  # Read Me Generator
+  [![license](https://img.shields.io/badge/License-CC-darkred.svg)](https://creativecommons.org/about/program-areas/software/)
 
   ## Description
 
-  5
+  This is a readme.md generator using node.js, this readme was made with it! Simply answer the questions asked in the terminal and it will create a readme file for you, no fuss, no muss!
 
   ## Table Of Contents
 
@@ -14,30 +14,28 @@
   - [License](#license)
   - [Guidelines](#guidelines)
   - [Questions](#questions)
+  - [Video](#video)
 
   ## Installation
 
-  5
+  To install this generator, you need to do the following: Click on the green code button on this repo and copy the url provided in the HTTPS section, Open a terminal window and use the 'cd' command to change into your prefered folder to store the files of this generator, type 'git clone ' and paste the url you copied from the HTTPS section, Once the files have cloned onto your computer, use the 'cd' command to change into the directory you just cloned, it should be called README-Generator, Type in 'npm i' to install required packages, and finally type in 'node index.js' to run the file, you will now be prompted with questions to answer
 
   ## Usage
 
-  5
+  Answer the questions provided and a readme file is generated
   
 ## License
-    Copyright 5 5
+    This work is licensed under Creative Commons Attribution 3.0 Unported License.
+https://creativecommons.org/terms#8
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    
-https://opensource.org/licenses/MIT
   ## Guidelines
 
-  5
+  You are open to do with this code as you wish
 
   ## Questions
 
-  This repo was created by https://github.com/5
-  To contact me, please send an email to 5
+  This repo was created by https://github.com/BenBasic
+  To contact me, please send an email to Benjamin@TreneonGames.com
+
+  ## Video
+  https://www.youtube.com/watch?v=-X4HhsNQq60
