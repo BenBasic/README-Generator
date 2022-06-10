@@ -12,6 +12,7 @@
   - [License](#license)
   - [Guidelines](#guidelines)
   - [Questions](#questions)
+  - [Tests](#tests)
   - [Video](#video)
 
   ## Installation
